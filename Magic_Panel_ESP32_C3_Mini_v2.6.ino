@@ -150,7 +150,7 @@ void setup() {
   while (!Serial) { ; }
 
   // Initialize the second serial port (Hardware UART)
-  // Baudrate: 115200 (as defined in config.h)
+  // Baudrate: 9600 (as defined in config.h)
   // RX Pin: GPIO 20
   // TX Pin: GPIO 21
   Serial1.begin(SERIAL_BAUD, SERIAL_8N1, 20, 21);
@@ -1031,7 +1031,7 @@ void showHelp(String topic) {
     Serial.println(F("\n=== Documentation: Magic Panel for ESP32-C3 Mini (v2.6) ==="));
     Serial.println(F("\n-- FAQ --"));
     Serial.println(F("Q1: Nothing on Serial Monitor?"));
-    Serial.println(F("A: Check baud rate is 115200. Ensure the correct COM port is selected."));
+    Serial.println(F("A: Check baud rate is 9600. Ensure the correct COM port is selected."));
     Serial.println(F("Q2: Patterns look wrong/mirrored?"));
     Serial.println(F("A: The code expects a 'Progressive/Scanline' layout. Check your matrix wiring and the 'xyToIndex' function in led_control.h."));
     Serial.println(F("Q3: How to change defaults permanently?"));

@@ -48,7 +48,7 @@
 #define MAX_TEXT_LENGTH 48
 
 // Serial communication
-#define SERIAL_BAUD 115200
+#define SERIAL_BAUD 9600
 #define MAX_COMMAND_LENGTH 60
 
 // Memory allocation
